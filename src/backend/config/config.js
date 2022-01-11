@@ -1,7 +1,7 @@
 const config = {
         host: 'localhost',
-        user: 'root',
-        password: 'Junta1543',
+        user: '****',
+        password: '****',
         database: 'utnproyecto'
 };
 
