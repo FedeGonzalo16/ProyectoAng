@@ -7,11 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 /* Partials */
 import { FooterComponent } from './partials/footer/footer.component';
 import { HeaderComponent } from './partials/header/header.component';
+/* Pages */
 import { HomeComponent } from './pages/home/home.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { GaleriaComponent } from './pages/galeria/galeria.component';
-import { ContactoComponent } from './pages/contacto/contacto.component';
 import { LoginComponent } from './pages/login/login.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
+/*  Services */
+import { DataPageService } from './servicios/data-page.service';
+/* HttpClient */
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,14 +26,15 @@ import { LoginComponent } from './pages/login/login.component';
     HomeComponent,
     NosotrosComponent,
     GaleriaComponent,
+    LoginComponent,
     ContactoComponent,
-    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataPageService],
   bootstrap: [AppComponent]
 })
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataPageService } from 'src/app/servicios/data-page.service';
 
 @Component({
   selector: 'app-nosotros',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NosotrosComponent implements OnInit {
 
-  constructor() { }
+  constructor( public service: DataPageService ) { }
 
   ngOnInit(): void {
   }
